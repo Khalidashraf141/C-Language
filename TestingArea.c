@@ -254,7 +254,7 @@ int main(){
     return 0;   
 }
 
-//Calcul50ate the sum of all numbers between 5 and 50 (including 5 & )
+//Calculate the sum of all numbers between 5 and 50 (including 5 & 50)
 #include<stdio.h>
 int main(){
     int sum = 0;
