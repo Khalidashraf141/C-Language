@@ -214,3 +214,56 @@ int fact(int n){
 }
 
 //Write a function to convert celsius to fahrenheit
+#include<stdio.h>
+
+float convertTemp(float celsius);
+int main(){
+    float far = convertTemp(0);
+    printf("far : %f",far);
+    return 0;
+}
+
+float convertTemp(float celsius){
+    float far = celsius*(9.0/5.0) + 32;
+    return far;
+}
+
+//Write a function to calculate Percentage of a student from Marks in Science, Math and Sanskrit
+#include<stdio.h>
+
+int calcPercentage(int science, int math, int sanskrit);
+
+int main(){
+    int sc = 98;
+    int math = 95;
+    int sanskrit= 99;
+    printf("percentage is %d", calcPercentage(sc,math, sanskrit));
+}
+
+int calcPercentage(int science, int math, int sanskrit){
+    return((science + math + sanskrit)/3);
+}
+
+//Write a function to print n terms of the fibonacci sequence.
+#include<stdio.h>
+
+int fib(int n);
+
+int main(){
+    printf("%d", fib(6));
+    return 0;
+}
+
+int fib(int n) {
+       if (n == 0) {
+           return 0;
+       }
+       if (n == 1) {
+           return 1;
+       }
+    int fibNum1 = fib(n-1);
+    int fibNum2 = fib(n-2);
+    int fibN = fibNum1 + fibNum2;
+    // printf("fib of %d is :", n, fibN);
+    return fibN;
+}
